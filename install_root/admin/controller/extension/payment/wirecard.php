@@ -18,7 +18,6 @@ class ControllerExtensionPaymentwirecard extends Controller {
 
 		$this->load->model('setting/setting');
 		
-		include(DIR_CATALOG.'controller/payment/wirecardconfig.php');
 
 		if (isset($this->request->post['wirecard_submit'])) {
 			$this->model_setting_setting->editSetting('wirecard', $this->request->post);			
