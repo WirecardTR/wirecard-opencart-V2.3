@@ -17,7 +17,7 @@ class ControllerExtensionPaymentwirecard extends Controller {
 		$this->document->setTitle('Kredi Kartı İle Ödeme');
 
 		$this->load->model('setting/setting');
-		$a;
+		
 
 		if (isset($this->request->post['wirecard_submit'])) {
 			$this->model_setting_setting->editSetting('wirecard', $this->request->post);			
